@@ -1,0 +1,249 @@
+#include "stdafx.h"
+#include <stdio.h>
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+
+
+usando el espacio de nombres std;
+
+flotar acuadrado (flotar x);
+float atriangulo (flotar x, flotar y);
+float arectangulo (float x, float y);
+flotar acirculo (flotar x);
+flotar pcuadrado (flotar x);
+float ptriangulo (flotar x, flotar y, flotar z);
+float prectangulo (float x, float y);
+pcirculo flotante (flotar x);
+flotar encontrarMen (flotar x, flotar y);
+
+int main () {
+	
+	int opcion, i = 1, figura;
+	flotador L, a, b, L1, L2, L3, base, altura, diametro, num1, num2;
+	
+	hacer{
+	
+	   cout << "**** BIENVENIDO ***** \ n";
+	   cout << "* 1.- Area de una figura * \ n";
+	   cout << "* 2.- Perimetro de una figura * \ n";
+	   cout << "* 3.- Hallar el menor valor entre 2 numeros * \ n";
+	   cout << "* 4.- Salir * \ n";
+	   cout << "************************************ \ n";
+	   cout << "Elige una opcion" << endl;
+	   cin >> opcion;
+	   
+	   
+	   interruptor (opcion)
+	   {
+	   	caso 1:
+	   		cout << "**** AREA DE UNA FIGURA ****" << endl;
+	     	cout << "* 1.- Cuadrado *" << endl;
+	     	cout << "* 2.- Triangulo *" << endl;
+	     	cout << "* 3.- Rectangulo *" << endl;
+			cout << "* 4.- Circulo *" << endl;
+	     	cout << "*****************" << endl;
+	     	cout << "elige una figura" << endl;
+	     	cin >> figura; 
+	     
+		 interruptor (figura)
+	     {
+            caso 1:
+	     	cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	     	cout << "Acaba de seleccionar la opcion de Cuadrado" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese el valor de L" << endl;
+	     	cin >> L;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El area es:" << acuadrado (L) << endl;
+	   	    cout << "*************" << endl; break;
+	   	    
+	   	    caso 2:
+	   	    cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	    cout << "Acaba de seleccionar la opcion de Triangulo" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese el valor de la base" << endl;
+	     	cin >> base;
+			cout << "Porfavor ingrese el valor de la altura" << endl;
+	     	cin >> altura;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El area es:" << atriangulo (base, altura) << endl;
+	   	    cout << "*************" << endl; break;
+	   	    
+	   	    caso 3:
+	   	    cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	    cout << "Acaba de seleccionar la opcion de Rectangulo" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese el valor de a" << endl;
+	     	cin >> a;
+			cout << "Porfavor ingrese el valor de b" << endl;
+	     	cin >> b;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El area es:" << arectangulo (a, b) << endl;
+	   	    cout << "*************" << endl; break;
+
+			caso 4:
+			cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	    cout << "Acaba de seleccionar la opción de Circulo" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese el valor del diametro" << endl;
+	     	cin >> diametro;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El area es:" << acirculo (diametro) << endl;
+	   	    cout << "*************" << endl; break;
+	   	    predeterminado: cout << "Opcion invalida"; romper;
+			   	
+	     }
+	     pausa;
+	   	caso 2:
+	   		cout << "**** PERIMETRO DE UNA FIGURA ****" << endl;
+	     	cout << "* 1.- Cuadrado *" << endl;
+	     	cout << "* 2.- Triangulo *" << endl;
+	     	cout << "* 3.- Rectangulo *" << endl;
+			cout << "* 4.- Circulo *" << endl;
+	     	cout << "*****************" << endl;
+	     	cout << "elige una figura" << endl;
+	     	cin >> figura; 
+	     
+		 interruptor (figura)
+	     {
+            caso 1:
+	     	cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	     	cout << "Acaba de seleccionar la opcion de Cuadrado" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese el valor de L" << endl;
+	     	cin >> L;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El perimetro es:" << pcuadrado (L) << endl;
+	   	    cout << "*********" << endl; pausa;
+	   	    
+	   	    caso 2:
+	   	    cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	    cout << "Acaba de seleccionar la opcion de Triangulo" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese el valor del lado 1" << endl;
+	     	cin >> L1;
+			cout << "Porfavor ingrese el valor del lado 2" << endl;
+	     	cin >> L2;
+			cout << "Porfavor ingrese el valor del lado 3" << endl;
+	     	cin >> L3;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El perimetro es:" << ptriangulo (L1, L2, L3) << endl;
+	   	    cout << "*************" << endl; pausa;
+	   	    
+	   	    caso 3:
+	   	    cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	    cout << "Acaba de seleccionar la opcion de Rectangulo" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese el valor de a" << endl;
+	     	cin >> a;
+			cout << "Porfavor ingrese el valor de b" << endl;
+	     	cin >> b;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El perimetro es:" << prectangulo (a, b) << endl;
+	   	    cout << "*********" << endl; pausa;
+
+			caso 4:
+			cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	    cout << "Acaba de seleccionar la opción de Circulo" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese el valor del diametro" << endl;
+	     	cin >> diametro;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El perimetro es:" << pcirculo (diametro) << endl;
+	   	    cout << "*********" << endl; pausa;
+	   	    predeterminado: cout << "Opcion invalida"; romper;
+			   	
+	     }
+	     pausa;
+	 
+		caso 3: 
+
+			cout << "**** HALLAR EL MENOR VALOR ENTRE 2 NUMEROS ****" << endl;
+			cout << "Ingrese el valor del primer numero" << endl;
+			cin >> num1;
+			cout << "Ingrese el valor del segundo numero" << endl;
+			cin >> num2;
+			cout << "El menor de los 2 numeros es:" << encontrarMen (num1, num2) << endl;
+			cout << "*********" << endl; pausa;
+
+	    caso 4: cout << "¿Seguro que quieres salir?" << endl;
+	           cout << "1.- SI" << endl;
+	           cout << "2.- NO" << endl;
+	           cin >> a;
+	           si (a == 1) {
+				   sistema ("salida");
+	           } 
+	           demás
+			   {
+	           	 return main ();
+	           }
+			   return 0;
+	           pausa;
+	    predeterminado: cout << "Opcion invalida" << endl; break;
+       }
+       sistema ("pausa");
+       sistema ("cls");
+	} while (opcion! = 0);
+	
+}
+
+flotar acuadrado (flotar x) {
+	área de flotación;
+	área = pow (x, 2);
+	área de retorno;
+}
+
+float atriangulo (float x, float y) {
+	área de flotación;
+	área = (x * y) / 2;
+	área de retorno;
+}
+
+float arectangulo (float x, float y) {
+	área de flotación;
+	área = x * y;
+	área de retorno;
+}
+
+flotar acirculo (flotar x) {
+	área de flotación;
+	área = (3,14159 * pow (x, 2)) / 4;
+	área de retorno;
+}
+
+flotar pcuadrado (flotar x) {
+	flotador perimetro;
+	perimetro = 4 * x;
+	retorno perimetro;
+}
+
+float ptriangulo (float x, float y, float z) {
+	flotador perimetro;
+	perimetro = x + y + z;
+	retorno perimetro;
+}
+
+float prectangulo (float x, float y) {
+	flotador perimetro;
+	perimetro = (2 * x) + (2 * y);
+	retorno perimetro;
+}
+
+pcirculo flotante (flotar x) {
+	flotador perimetro;
+	perimetro = 3,14159 * x;
+	retorno perimetro;
+}
+
+float encontrarMen (float x, float y) {
+	float numMen;
+	si (x <y) {
+		numMen = x;
+	}
+	demás{
+		numMen = y;
+	}
+
+	return numMen;
+}
