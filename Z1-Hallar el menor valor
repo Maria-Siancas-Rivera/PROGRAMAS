@@ -1,0 +1,34 @@
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+
+usando el espacio de nombres std;
+
+// prototipo de funcion
+
+int encontrarMen (int x, int y);
+
+int main ()
+{
+	int n1, n2;
+	cout << "Dígito 2 numeros:";
+	cin >> n1 >> n2;
+
+	cout << "El menor de los 2 numeros es:" << encontrarMen (n1, n2) << endl;
+
+	getch ();
+	return 0;
+}
+
+// Definición de función
+int encontrarMen (int x, int y) {
+	int numMen;
+	si (x <y) {
+		numMen = x;
+	}
+	demás{
+		numMen = y;
+	}
+
+	return numMen;
+}
