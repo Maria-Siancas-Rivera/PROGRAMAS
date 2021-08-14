@@ -1,0 +1,133 @@
+#include "stdafx.h"
+#include <iostream>
+#include <conio.h>
+#include <math.h>
+
+
+usando el espacio de nombres std;
+
+int main () {
+	
+	int a, opcion, i = 1, cantidad, gaseosa;
+	flotador total, precio, g;
+	
+	hacer{
+	
+	   cout << "**** BIENVENIDO ***** \ n";
+	   cout << "* 1.- Hamburguesas a 3bs * \ n";
+	   cout << "* 2.- Hamburguesa con queso 5bs * \ n";
+	   cout << "* 3.- Papas fritas 2bs * \ n";
+	   cout << "* 4.- Gaseosas * \ n";
+	   cout << "* 5.- Salir * \ n";
+	   cout << "************* \ n";
+	   cout << "Elige una opcion" << endl;
+	   cin >> opcion;
+	   
+	   
+	   interruptor (opcion)
+	   {
+	   	caso 1: precio = 3;
+	   	cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	cout << "Acaba de seleccionar la opción de hamburguesas" << endl;
+	   	cout << "---------------------------------------------- ------ "<< endl;
+	   	cout << "Porfavor ingrese la cantidad de hamburguesas que desee comprar" << endl;
+	   	cin >> cantidad;
+	   	cout << "Acaba de ordenar" << cantidad << "hamburguesas" << endl;
+	   	total = precio * cantidad;
+	   	cout << "\ n *********" << endl;
+	   	cout << "* El total es:" << total << "bs. *" << endl;
+	   	cout << "*********" << endl; romper;
+	   	caso 2: precio = 5;
+		cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+		cout << "Acaba de seleccionar la opción de hamburguesas con queso" << endl;
+		cout << "---------------------------------------------- ---------- "<< endl;
+		cout << "Porfavor ingrese la cantidad de hamburguesas con queso que desee comprar" << endl;
+	   	cin >> cantidad;
+	   	cout << "Acaba de ordenar" << cantidad << "hamburguesas con queso" << endl;
+	   	total = precio * cantidad;
+	    cout << "\ n **********" << endl;
+	   	cout << "* El total es:" << total << "bs. *" << endl;
+	   	cout << "********" << endl; pausa;
+	   	
+	   	caso 3: precio = 2;
+	   	cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	cout << "Acaba de seleccionar la opción de papas fritas" << endl;
+		cout << "---------------------------------------------- ---------------- "<< endl;
+		cout << "Porfavor ingrese la cantidad de papas fritas que desee comprar" << endl;
+	   	cin >> cantidad;
+	   	cout << "Acaba de ordenar" << cantidad << "papas fritas" << endl;
+	   	total = precio * cantidad;
+	    cout << "\ n *********" << endl;
+	   	cout << "* El total es:" << total << "bs. *" << endl;
+	   	cout << "*********" << endl; pausa;
+	   	
+	   	caso 4: 
+		    cout << "**** GASEOSAS ****" << endl;
+	     	cout << "* 1.- Sprite 1.50bs *" << endl;
+	     	cout << "* 2.- Coca-Cola 2bs *" << endl;
+	     	cout << "* 3.- Fanta 1.50bs *" << endl;
+	     	cout << "************" << endl;
+	     	cout << "elige una gaseosa" << endl;
+	     	cin >> gaseosa; 
+	     
+		 interruptor (gaseosa)
+	     {
+            caso 1: g = 1,50;
+	     	cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	     	cout << "Acaba de seleccionar la opción de sprite" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese la cantidad de gaseosa que quiere comprar" << endl;
+	     	cin >> cantidad;
+	     	cout << "Acaba de ordenar" << cantidad << "Gaseosas sabor Sprite" << endl;
+	     	total = g * cantidad;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El total es:" << total << "bs. *" << endl;
+	   	    cout << "*********" << endl; pausa;
+	   	    
+	   	    caso 2: g = 2;
+	   	    cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	    cout << "Acaba de seleccionar la opcion de Coca-Cola" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese la cantidad de gaseosa que quiere comprar" << endl;
+	     	cin >> cantidad;
+	     	cout << "Acaba de ordenar" << cantidad << "Gaseosas sabor Coca-Cola" << endl;
+	     	total = g * cantidad;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El total es:" << total << "bs. *" << endl;
+	   	    cout << "*********" << endl; pausa;
+	   	    
+	   	    caso 3: g = 1,50;
+	   	    cout << "¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯ ¯¯¯¯¯¯¯¯¯¯¯¯¯ "<< endl;
+	   	    cout << "Acaba de seleccionar la opcion de Fanta" << endl;
+	     	cout << "---------------------------------------------- ------------- "<< endl;
+	     	cout << "Porfavor ingrese la cantidad de gaseosa que quiere comprar" << endl;
+	     	cin >> cantidad;
+	     	cout << "Acaba de ordenar" << cantidad << "Gaseosas sabor Fanta" << endl;
+	     	total = g * cantidad;
+	     	cout << "\ n *********" << endl;
+	   	    cout << "* El total es:" << total << "bs. *" << endl;
+	   	    cout << "*********" << endl; pausa;
+	   	    predeterminado: cout << "Opcion invalida"; romper;
+			   	
+	     }
+	     pausa;
+	    caso 5: cout << "¿Seguro que quieres salir?" << endl;
+	           cout << "1.- SI" << endl;
+	           cout << "2.- NO" << endl;
+	           cin >> a;
+	           si (a == 1) {
+				   sistema ("salida");
+	           } 
+	           demás
+			   {
+	           	 return main ();
+	           }
+			   return 0;
+	           pausa;
+	    predeterminado: cout << "Opcion invalida" << endl; break;
+       }
+       sistema ("pausa");
+       sistema ("cls");
+	} while (opcion! = 0);
+	
+}
